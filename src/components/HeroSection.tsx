@@ -104,7 +104,7 @@ const Index = () => {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4">
           <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-xl text-center">
             <p className="text-lg font-bold text-black mb-5">
-              Set your age to at least 18 years to get the coupon.
+              You need to be at least 18 years to be eligible for the coupon.
             </p>
             <button
               onClick={handlePopupClaim}
