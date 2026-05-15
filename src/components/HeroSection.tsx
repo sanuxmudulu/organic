@@ -11,7 +11,7 @@ const Index = () => {
   };
 
   const handlePopupClaim = () => {
-    window.location.href = `${baseUrl}&source=dm`;
+    window.location.href = `${baseUrl}`;
   };
 
   const notifications = [ <>Olivia claimed <span className="text-green-500 font-semibold">$750</span> for completing 6 deals</>,
