@@ -3,13 +3,7 @@ import { useEffect, useState } from "react";
 const HeroSection = () => {
   const baseUrl = "https://giftclick.org/aff_c?offer_id=3634&aff_id=150406";
 
-  const [showPopup, setShowPopup] = useState(false);
-
   const handleClaimClick = () => {
-    setShowPopup(true);
-  };
-
-  const handlePopupClaim = () => {
     window.location.href = baseUrl;
   };
 
@@ -98,24 +92,6 @@ const HeroSection = () => {
 
   return (
     <>
-      {/* Age Confirmation Popup */}
-      {showPopup && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4">
-          <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-xl text-center">
-            <p className="text-lg font-bold text-black mb-5">
-              You must be at least 18 years old to claim this reward.
-            </p>
-            <button
-              onClick={handlePopupClaim}
-              className="w-full text-black font-bold py-4 px-6 rounded-full shadow-lg"
-              style={{ background: "#000", color: "#fff" }}
-            >
-              I'm 18+ — Claim Now
-            </button>
-          </div>
-        </div>
-      )}
-
       {/* Top Banner */}
       <div
         className="w-full text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40"
@@ -130,7 +106,7 @@ const HeroSection = () => {
         style={{ background: "#fff", paddingTop: "60px" }}
       >
         {/* Hero Value */}
-        <div className="text-center mb-2 mt-4">
+        <div className="text-center mb-2 mt-1">
           <p
             className="font-bold leading-none"
             style={{ fontSize: "clamp(2.5rem, 8vw, 4rem)", fontFamily: "Georgia, serif" }}
@@ -140,9 +116,7 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl font-semibold text-black mt-1" style={{ fontFamily: "Georgia, serif" }}>
             Exclusive Member Reward
           </p>
-          <p className="text-gray-500 text-sm mt-3 max-w-xs mx-auto leading-relaxed">
-            Complete a quick registration to unlock your Coach gift card.
-          </p>
+
         </div>
 
         {/* How To Claim Steps */}
@@ -158,7 +132,7 @@ const HeroSection = () => {
               "Click the button below",
               "Enter your basic info",
               { title: "Complete required offers", sub: "Finish 4-5 simple deals to unlock your full reward." },
-              "Claim your Coach gift card",
+              "Claim your $750 Coach gift card",
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-4 py-4 first:pt-0 last:pb-0">
                 <div
