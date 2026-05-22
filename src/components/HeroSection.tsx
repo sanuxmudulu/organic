@@ -103,7 +103,7 @@ const HeroSection = () => {
       {/* Main Page */}
       <div
         className="min-h-screen flex flex-col items-center px-4 py-10"
-        style={{ background: "#fff", paddingTop: "32px" }}
+        style={{ background: "#fff", paddingTop: "40px" }}
       >
         {/* Hero Value */}
         <div className="text-center mb-2 mt-1">
@@ -121,7 +121,7 @@ const HeroSection = () => {
 
         {/* How To Claim Steps */}
         <div
-          className="w-full max-w-lg rounded-2xl border border-gray-200 p-6 mt-3 mb-2"
+          className="w-full max-w-lg rounded-2xl border border-gray-200 p-6 mt-2 mb-2"
           style={{ background: "#fff" }}
         >
           <p className="text-xs uppercase tracking-widest text-gray-400 text-center mb-5">
