@@ -97,7 +97,7 @@ const HeroSection = () => {
         className="w-full text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40"
         style={{ background: "#f5f5f5", color: "#111", borderBottom: "1px solid #e5e5e5" }}
       >
-        4,200+ Australians have already claimed
+        4,200+ people have already claimed
       </div>
 
       {/* Main Page */}
