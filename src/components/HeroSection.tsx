@@ -71,30 +71,42 @@ const Index = () => {
     },
   ];
 
+  function FAQItem({ q, a }: { q: string; a: string }) {
+    const [open, setOpen] = useState(false);
+    return (
+      <div
+        className="rounded-xl border border-black/20 px-4 py-3"
+        style={{ background: "#111" }}
+      >
+        <button
+          onClick={() => setOpen(!open)}
+          className="w-full flex items-center justify-between text-left"
+          style={{ background: "none", border: "none", cursor: "pointer" }}
+        >
+          <span className="text-white font-semibold">{q}</span>
+          <span
+            className="text-white/60 ml-3 flex-shrink-0 transition-transform duration-200"
+            style={{ transform: open ? "rotate(45deg)" : "rotate(0deg)" }}
+          >
+            +
+          </span>
+        </button>
+        {open && (
+          <p className="mt-2 text-sm text-white/75 leading-relaxed">{a}</p>
+        )}
+      </div>
+    );
+  }
+
   function FAQSection() {
     return (
       <section className="mt-10 rounded-2xl bg-white border border-gray-200 p-5 md:p-7 shadow-sm w-full max-w-lg">
         <h2 className="text-2xl md:text-3xl font-bold text-black text-center">
           Common Questions
         </h2>
-
         <div className="mt-5 space-y-3">
           {faqs.map((item, i) => (
-            <details
-              key={i}
-              className="group rounded-xl border border-black/20 px-4 py-3"
-              style={{ background: "#111" }}
-            >
-              <summary className="cursor-pointer list-none text-white font-semibold flex items-center justify-between">
-                <span>{item.q}</span>
-                <span className="text-white/60 group-open:rotate-45 transition-transform">
-                  +
-                </span>
-              </summary>
-              <p className="mt-2 text-sm text-white/75 leading-relaxed">
-                {item.a}
-              </p>
-            </details>
+            <FAQItem key={i} q={item.q} a={item.a} />
           ))}
         </div>
       </section>
