@@ -2,7 +2,7 @@ import "../index.css";
 import { useEffect, useState } from "react";
 
 const Index = () => {
-  const baseUrl = "https://linkthem.net/aff_c?offer_id=4129&aff_id=150406";
+  const baseUrl = "https://giftclick.org/aff_c?offer_id=3634&aff_id=150406";
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -11,19 +11,21 @@ const Index = () => {
   };
 
   const handlePopupClaim = () => {
-    window.location.href = `${baseUrl}`;
+    window.location.href = baseUrl;
   };
 
-  const notifications = [ <>Olivia claimed <span className="text-green-500 font-semibold">$750</span> for completing 6 deals</>,
-                         <>Charlotte received <span className="text-green-500 font-semibold">$650</span> for doing 5 deals</>,
-                         <>Amelia received <span className="text-green-500 font-semibold">$500</span> for completing 4 deals</>,
-                         <>Isla claimed <span className="text-green-500 font-semibold">$750</span> for doing 6 deals</>,
-                         <>Ava claimed <span className="text-green-500 font-semibold">$750</span> for doing 6 deals</>,
-                         <>Noah received <span className="text-green-500 font-semibold">$500</span> for completing 4 deals</>,
-                         <>Grace claimed <span className="text-green-500 font-semibold">$650</span> for doing 5 deals</>,
-                         <>Willow received <span className="text-green-500 font-semibold">$750</span> for completing 6 deals</>,
-                         <>Harper claimed <span className="text-green-500 font-semibold">$650</span> for completing 5 deals</>,
-                         <>Chloe claimed <span className="text-green-500 font-semibold">$500</span> for doing 4 deals</>, ];
+  const notifications = [
+    <>Olivia claimed <span className="text-green-500 font-semibold">$750</span> for completing 6 deals</>,
+    <>Charlotte received <span className="text-green-500 font-semibold">$650</span> for doing 5 deals</>,
+    <>Amelia received <span className="text-green-500 font-semibold">$500</span> for completing 4 deals</>,
+    <>Isla claimed <span className="text-green-500 font-semibold">$750</span> for doing 6 deals</>,
+    <>Ava claimed <span className="text-green-500 font-semibold">$750</span> for doing 6 deals</>,
+    <>Noah received <span className="text-green-500 font-semibold">$500</span> for completing 4 deals</>,
+    <>Grace claimed <span className="text-green-500 font-semibold">$650</span> for doing 5 deals</>,
+    <>Willow received <span className="text-green-500 font-semibold">$750</span> for completing 6 deals</>,
+    <>Harper claimed <span className="text-green-500 font-semibold">$650</span> for completing 5 deals</>,
+    <>Chloe claimed <span className="text-green-500 font-semibold">$500</span> for doing 4 deals</>,
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visible, setVisible] = useState(false);
@@ -65,7 +67,7 @@ const Index = () => {
     },
     {
       q: "When will I receive my coupon?",
-      a: "Once your deals are verified, your JB Hifi coupon code will be delivered to your email within 24-48 hours.",
+      a: "Once your deals are verified, your Coach coupon code will be delivered to your email within 24-48 hours.",
     },
   ];
 
@@ -80,7 +82,8 @@ const Index = () => {
           {faqs.map((item, i) => (
             <details
               key={i}
-              className="group rounded-xl bg-black/80 border border-black/20 px-4 py-3"
+              className="group rounded-xl border border-black/20 px-4 py-3"
+              style={{ background: "#111" }}
             >
               <summary className="cursor-pointer list-none text-white font-semibold flex items-center justify-between">
                 <span>{item.q}</span>
@@ -108,7 +111,7 @@ const Index = () => {
             </p>
             <button
               onClick={handlePopupClaim}
-              className="w-full bg-[#FFF200] hover:bg-[#e6d800] text-black font-bold py-4 px-6 rounded-full shadow-lg"
+              className="w-full bg-black hover:bg-gray-900 text-white font-bold py-4 px-6 rounded-full shadow-lg"
             >
               Claim Now
             </button>
@@ -116,35 +119,44 @@ const Index = () => {
         </div>
       )}
 
-      <div className="w-full bg-[#FFF200] text-black text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40">
+      <div
+        className="w-full text-white text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40"
+        style={{ background: "#111" }}
+      >
         5,500+ People Already Claimed
       </div>
 
-      <div className="min-h-screen halloween-gradient flex flex-col items-center justify-center px-4 py-4 fade-in-up mt-8">
+      <div
+        className="min-h-screen flex flex-col items-center justify-center px-4 py-4 fade-in-up mt-8"
+        style={{ background: "#fff" }}
+      >
         <div className="mb-4">
           <img
-            src="/images/jb logo.jpg"
-            alt="JB Hi-Fi"
+            src="/images/coach.png"
+            alt="Coach"
             className="h-14 md:h-16 object-contain"
           />
         </div>
 
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 text-black max-w-lg leading-snug">
-          $750 JB Hifi Coupon
+          $750 Coach Coupon
         </h1>
 
         <div className="w-full max-w-lg rounded-2xl border border-gray-200 p-6 mb-6 bg-white">
           <div className="space-y-6">
             {[1, 2, 3, 4].map((step, i) => (
               <div key={i} className="flex items-center gap-4">
-                <div className="w-10 h-10 bg-[#FFF200] text-black rounded-full flex items-center justify-center font-bold flex-shrink-0 step-number">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0 step-number"
+                  style={{ background: "#111", color: "#fff" }}
+                >
                   {step}
                 </div>
                 <h3 className="font-semibold text-black">
                   {[
                     'Click "Claim Now"',
                     "Enter your email and basic info",
-                    "Complete 4-6 sponsored deals",
+                    "Complete 4-5 sponsored deals",
                     "Enjoy your $750 coupon!",
                   ][i]}
                 </h3>
@@ -155,7 +167,8 @@ const Index = () => {
 
         <button
           onClick={handleClaimClick}
-          className="w-full max-w-md bg-[#FFF200] hover:bg-[#e6d800] text-black font-semibold py-5 px-6 rounded-full mb-3 shein-cta-button cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg"
+          className="w-full max-w-md font-semibold py-5 px-6 rounded-full mb-3 shein-cta-button cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg"
+          style={{ background: "#111", color: "#fff" }}
         >
           <div className="text-left">
             <div className="font-bold text-base md:text-lg">Claim Now</div>
@@ -167,9 +180,11 @@ const Index = () => {
         </p>
 
         <div className="w-full max-w-lg mb-2">
-          <div className={`rounded-2xl border border-gray-200 bg-white px-4 py-3 shadow-lg transition-all duration-300 ${
-            visible ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
-          }`}>
+          <div
+            className={`rounded-2xl border border-gray-200 bg-white px-4 py-3 shadow-lg transition-all duration-300 ${
+              visible ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
+            }`}
+          >
             <div className="flex items-center justify-center gap-2 text-center">
               <span className="h-2.5 w-2.5 rounded-full bg-green-500 flex-shrink-0" />
               <p className="text-sm md:text-base font-semibold text-black leading-snug">
