@@ -63,7 +63,7 @@ const Index = () => {
     },
     {
       q: "How many deals do I have to do?",
-      a: "We recommend completing 4 to 5 deals to qualify. The more you complete, the higher your coupon value climbs - up to $750.",
+      a: "We recommend completing 4 to 6 deals to qualify. The more you complete, the higher your coupon value climbs - up to $750.",
     },
     {
       q: "When will I receive my coupon?",
@@ -168,7 +168,7 @@ const Index = () => {
                   {[
                     'Click "Claim Now"',
                     "Enter your email and basic info",
-                    "Complete 4-5 sponsored deals",
+                    "Complete 4-6 sponsored deals",
                     "Enjoy your $750 coupon!",
                   ][i]}
                 </h3>
