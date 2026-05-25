@@ -59,7 +59,7 @@ const Index = () => {
     },
     {
       q: "What are deals?",
-      a: "Deals are sponsored offers from our partner brands like free trials, sign-ups, or sample requests. They're how the coupon is funded.",
+      a: "Deals are sponsored offers from our partner brands like downloading games, free trials, sign-ups, or surveys. They're how the coupon is funded.",
     },
     {
       q: "How many deals do I have to do?",
