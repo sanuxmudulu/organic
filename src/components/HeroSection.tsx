@@ -142,7 +142,7 @@ const Index = () => {
         className="min-h-screen flex flex-col items-center justify-center px-4 py-4 fade-in-up mt-8"
         style={{ background: "#fff" }}
       >
-        <div className="mb-0">
+        <div className="mb-4">
   <img
     src="images/starbucks.jpg"
     alt="Starbucks"
@@ -150,7 +150,7 @@ const Index = () => {
   />
 </div>
 
-<h1 className="text-2xl md:text-3xl font-bold text-center mb-3 text-black max-w-lg leading-tight">
+<h1 className="text-2xl md:text-3xl font-bold text-center mb-2 text-black max-w-lg leading-snug">
   $100 Starbucks Coupon
 </h1>
 
