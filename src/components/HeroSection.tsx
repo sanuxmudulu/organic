@@ -146,13 +146,13 @@ const Index = () => {
           <img
             src="images/starbucks.jpg"
             alt="Starbucks"
-            className="h-14 md:h-16 object-contain"
+            className="h-20 md:h-24 object-contain"
           />
         </div>
 
-        <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 text-black max-w-lg leading-snug">
-          $100 Starbucks Coupon
-        </h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-center mb-3 text-black max-w-lg leading-snug">
+  $100 Starbucks Coupon
+</h1>
 
         <div className="w-full max-w-lg rounded-2xl border border-gray-200 p-6 mb-6 bg-white">
           <div className="space-y-6">
