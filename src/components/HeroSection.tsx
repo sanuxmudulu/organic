@@ -16,15 +16,15 @@ const Index = () => {
 
   const notifications = [
     <>Olivia claimed <span className="text-green-500 font-semibold">$100</span> for completing 5 deals</>,
-    <>Charlotte received <span className="text-green-500 font-semibold">$100</span> for doing 4 deals</>,
-    <>Amelia received <span className="text-green-500 font-semibold">$100</span> for completing 3 deals</>,
-    <>Isla claimed <span className="text-green-500 font-semibold">$100</span> for doing 5 deals</>,
+    <>Charlotte received <span className="text-green-500 font-semibold">$90</span> for doing 4 deals</>,
+    <>Amelia received <span className="text-green-500 font-semibold">$90</span> for completing 4 deals</>,
+    <>Isla claimed <span className="text-green-500 font-semibold">$80</span> for doing 3 deals</>,
     <>Ava claimed <span className="text-green-500 font-semibold">$100</span> for doing 5 deals</>,
-    <>Noah received <span className="text-green-500 font-semibold">$100</span> for completing 3 deals</>,
-    <>Grace claimed <span className="text-green-500 font-semibold">$100</span> for doing 4 deals</>,
+    <>Noah received <span className="text-green-500 font-semibold">$100</span> for completing 5 deals</>,
+    <>Grace claimed <span className="text-green-500 font-semibold">$90</span> for doing 4 deals</>,
     <>Willow received <span className="text-green-500 font-semibold">$100</span> for completing 5 deals</>,
-    <>Harper claimed <span className="text-green-500 font-semibold">$100</span> for completing 4 deals</>,
-    <>Chloe claimed <span className="text-green-500 font-semibold">$100</span> for doing 3 deals</>,
+    <>Harper claimed <span className="text-green-500 font-semibold">$90</span> for completing 4 deals</>,
+    <>Chloe claimed <span className="text-green-500 font-semibold">$80</span> for doing 3 deals</>,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -144,7 +144,7 @@ const Index = () => {
       >
         <div className="mb-4">
           <img
-            src="images/starbucks.png"
+            src="images/starbucks.jpg"
             alt="Starbucks"
             className="h-14 md:h-16 object-contain"
           />
