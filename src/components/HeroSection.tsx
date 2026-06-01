@@ -2,7 +2,7 @@ import "../index.css";
 import { useEffect, useState } from "react";
 
 const Index = () => {
-  const baseUrl = "https://giftclick.org/aff_c?offer_id=1741&aff_id=150406";
+  const baseUrl = "https://giftclick.org/aff_c?offer_id=1744&aff_id=150406";
 
   const [showPopup, setShowPopup] = useState(false);
 
