@@ -142,11 +142,11 @@ const Index = () => {
         className="min-h-screen flex flex-col items-center justify-center px-4 py-4 fade-in-up mt-8"
         style={{ background: "#fff" }}
       >
-        <div className="mb-4">
+        <div className="mb-2">
   <img
     src="images/starbucks.jpg"
     alt="Starbucks"
-    className="h-21 md:h-25 object-contain"
+    className="h-20 md:h-24 object-contain"
   />
 </div>
 
