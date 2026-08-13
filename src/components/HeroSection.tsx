@@ -18,48 +18,48 @@ const Index = () => {
   const notifications = [
     <>
       Olivia claimed{" "}
-      <span className="text-green-500 font-semibold">$750</span> for
+      <span className="text-red-600 font-semibold">$750</span> for
       completing 5 deals
     </>,
     <>
       Charlotte received{" "}
-      <span className="text-green-500 font-semibold">$650</span> for doing 4
+      <span className="text-red-600 font-semibold">$650</span> for doing 4
       deals
     </>,
     <>
       Amelia received{" "}
-      <span className="text-green-500 font-semibold">$500</span> for completing
+      <span className="text-red-600 font-semibold">$500</span> for completing
       4 deals
     </>,
     <>
-      Isla claimed <span className="text-green-500 font-semibold">$650</span>{" "}
+      Isla claimed <span className="text-red-600 font-semibold">$650</span>{" "}
       for doing 4 deals
     </>,
     <>
-      Ava claimed <span className="text-green-500 font-semibold">$750</span>{" "}
+      Ava claimed <span className="text-red-600 font-semibold">$750</span>{" "}
       for doing 5 deals
     </>,
     <>
       Noah received{" "}
-      <span className="text-green-500 font-semibold">$750</span> for completing
+      <span className="text-red-600 font-semibold">$750</span> for completing
       5 deals
     </>,
     <>
-      Grace claimed <span className="text-green-500 font-semibold">$500</span>{" "}
+      Grace claimed <span className="text-red-600 font-semibold">$500</span>{" "}
       for doing 3 deals
     </>,
     <>
       Willow received{" "}
-      <span className="text-green-500 font-semibold">$650</span> for completing
+      <span className="text-red-600 font-semibold">$650</span> for completing
       4 deals
     </>,
     <>
       Harper claimed{" "}
-      <span className="text-green-500 font-semibold">$750</span> for completing
+      <span className="text-red-600 font-semibold">$750</span> for completing
       5 deals
     </>,
     <>
-      Chloe claimed <span className="text-green-500 font-semibold">$500</span>{" "}
+      Chloe claimed <span className="text-red-600 font-semibold">$500</span>{" "}
       for doing 3 deals
     </>,
   ];
@@ -106,7 +106,7 @@ const Index = () => {
     },
     {
       q: "When will I receive my coupon?",
-      a: "Once your deals are verified, your Coach coupon code will be delivered to your email within 24-48 hours.",
+      a: "Once your deals are verified, your Target coupon code will be delivered to your email within 24-48 hours.",
     },
   ];
 
@@ -115,7 +115,7 @@ const Index = () => {
 
     return (
       <div
-        className="rounded-xl border border-black/20 px-4 py-3"
+        className="rounded-xl border border-red-600/30 px-4 py-3"
         style={{ background: "#000000" }}
       >
         <button
@@ -175,7 +175,7 @@ const Index = () => {
 
             <button
               onClick={handlePopupClaim}
-              className="w-full bg-black hover:bg-gray-900 text-white font-bold py-4 px-6 rounded-full shadow-lg"
+              className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-full shadow-lg"
             >
               Claim Now
             </button>
@@ -185,7 +185,7 @@ const Index = () => {
 
       <div
         className="w-full text-white text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40"
-        style={{ background: "#000000" }}
+        style={{ background: "#cc0000" }}
       >
         5,500+ People Already Claimed
       </div>
@@ -196,14 +196,14 @@ const Index = () => {
       >
         <div className="mb-2">
           <img
-            src="images/coach.png"
-            alt="Coach"
+            src="images/target logo.png"
+            alt="Target"
             className="h-20 md:h-24 object-contain"
           />
         </div>
 
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-2 text-black max-w-lg leading-snug">
-          $750 Coach Coupon
+          $750 Target Coupon
         </h1>
 
         <div className="w-full max-w-lg rounded-2xl border border-gray-200 p-6 mb-6 bg-white">
@@ -213,7 +213,7 @@ const Index = () => {
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0 step-number"
                   style={{
-                    background: "#000000",
+                    background: "#cc0000",
                     color: "#ffffff",
                   }}
                 >
@@ -239,7 +239,7 @@ const Index = () => {
           onClick={handleClaimClick}
           className="w-full max-w-md font-semibold py-5 px-6 rounded-full mb-3 shein-cta-button cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg"
           style={{
-            background: "#000000",
+            background: "#cc0000",
             color: "#ffffff",
           }}
         >
@@ -263,7 +263,7 @@ const Index = () => {
             }`}
           >
             <div className="flex items-center justify-center gap-2 text-center">
-              <span className="h-2.5 w-2.5 rounded-full bg-black flex-shrink-0" />
+              <span className="h-2.5 w-2.5 rounded-full bg-red-600 flex-shrink-0" />
 
               <p className="text-sm md:text-base font-semibold text-black leading-snug">
                 {shuffledNotifications[currentIndex]}
