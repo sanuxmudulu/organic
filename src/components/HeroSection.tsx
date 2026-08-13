@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const Index = () => {
   const baseUrl =
-    "https://giftclick.org/aff_c?offer_id=3634&aff_id=150406";
+    "https://trksy.org/aff_c?offer_id=1178&aff_id=150406";
 
   const [showPopup, setShowPopup] = useState(false);
 
