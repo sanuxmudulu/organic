@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 
 const Index = () => {
   const baseUrl =
-    "https://giftclick.org/aff_c?offer_id=3004&aff_id=150406";
+    "https://trksy.org/aff_c?offer_id=1178&aff_id=150406";
+
+  const walmartBlue = "#0071ce";
+  const walmartBlueHover = "#005cb9";
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -115,8 +118,11 @@ const Index = () => {
 
     return (
       <div
-        className="rounded-xl border border-blue-600/30 px-4 py-3"
-        style={{ background: "#000000" }}
+        className="rounded-xl border px-4 py-3"
+        style={{
+          background: "#000000",
+          borderColor: "rgba(0, 113, 206, 0.30)",
+        }}
       >
         <button
           onClick={() => setOpen(!open)}
@@ -175,7 +181,14 @@ const Index = () => {
 
             <button
               onClick={handlePopupClaim}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-full shadow-lg"
+              className="w-full hover:opacity-95 text-white font-bold py-4 px-6 rounded-full shadow-lg transition-all duration-200"
+              style={{ background: walmartBlue }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.background = walmartBlueHover)
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.background = walmartBlue)
+              }
             >
               Claim Now
             </button>
@@ -185,7 +198,7 @@ const Index = () => {
 
       <div
         className="w-full text-white text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40"
-        style={{ background: "#0071ce" }}
+        style={{ background: walmartBlue }}
       >
         5,500+ People Already Claimed
       </div>
@@ -213,7 +226,7 @@ const Index = () => {
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0 step-number"
                   style={{
-                    background: "#0071ce",
+                    background: walmartBlue,
                     color: "#ffffff",
                   }}
                 >
@@ -237,11 +250,17 @@ const Index = () => {
 
         <button
           onClick={handleClaimClick}
-          className="w-full max-w-md font-semibold py-5 px-6 rounded-full mb-3 shein-cta-button cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg"
+          className="w-full max-w-md font-semibold py-5 px-6 rounded-full mb-3 shein-cta-button cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg transition-all duration-200"
           style={{
-            background: "#0071ce",
+            background: walmartBlue,
             color: "#ffffff",
           }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.background = walmartBlueHover)
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.background = walmartBlue)
+          }
         >
           <div className="text-left">
             <div className="font-bold text-base md:text-lg">
