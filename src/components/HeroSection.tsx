@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const Index = () => {
   const baseUrl =
-    "https://trksy.org/aff_c?offer_id=1178&aff_id=150406";
+    "https://giftclick.org/aff_c?offer_id=3004&aff_id=150406";
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -106,7 +106,7 @@ const Index = () => {
     },
     {
       q: "When will I receive my coupon?",
-      a: "Once your deals are verified, your Target coupon code will be delivered to your email within 24-48 hours.",
+      a: "Once your deals are verified, your Walmart coupon code will be delivered to your email within 24-48 hours.",
     },
   ];
 
@@ -115,7 +115,7 @@ const Index = () => {
 
     return (
       <div
-        className="rounded-xl border border-red-600/30 px-4 py-3"
+        className="rounded-xl border border-blue-600/30 px-4 py-3"
         style={{ background: "#000000" }}
       >
         <button
@@ -175,7 +175,7 @@ const Index = () => {
 
             <button
               onClick={handlePopupClaim}
-              className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-full shadow-lg"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-full shadow-lg"
             >
               Claim Now
             </button>
@@ -185,7 +185,7 @@ const Index = () => {
 
       <div
         className="w-full text-white text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40"
-        style={{ background: "#cc0000" }}
+        style={{ background: "#0071ce" }}
       >
         5,500+ People Already Claimed
       </div>
@@ -196,14 +196,14 @@ const Index = () => {
       >
         <div className="mb-2">
           <img
-            src="images/target logo.png"
-            alt="Target"
+            src="images/walmart.jpg"
+            alt="Walmart"
             className="h-20 md:h-24 object-contain"
           />
         </div>
 
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-2 text-black max-w-lg leading-snug">
-          $750 Target Coupon
+          $750 Walmart Coupon
         </h1>
 
         <div className="w-full max-w-lg rounded-2xl border border-gray-200 p-6 mb-6 bg-white">
@@ -213,7 +213,7 @@ const Index = () => {
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0 step-number"
                   style={{
-                    background: "#cc0000",
+                    background: "#0071ce",
                     color: "#ffffff",
                   }}
                 >
@@ -239,7 +239,7 @@ const Index = () => {
           onClick={handleClaimClick}
           className="w-full max-w-md font-semibold py-5 px-6 rounded-full mb-3 shein-cta-button cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg"
           style={{
-            background: "#cc0000",
+            background: "#0071ce",
             color: "#ffffff",
           }}
         >
