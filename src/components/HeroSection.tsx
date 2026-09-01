@@ -5,8 +5,8 @@ const Index = () => {
   const baseUrl =
     "https://trksy.org/aff_c?offer_id=1178&aff_id=150406";
 
-  const walmartBlue = "#0071ce";
-  const walmartBlueHover = "#005cb9";
+  const walmartBlue = "#0053E2";
+  const walmartBlueHover = "#0048C8";
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -120,8 +120,8 @@ const Index = () => {
       <div
         className="rounded-xl border px-4 py-3"
         style={{
-          background: "#000000",
-          borderColor: "rgba(0, 113, 206, 0.30)",
+          backgroundColor: "#000000",
+          borderColor: "rgba(0, 83, 226, 0.35)",
         }}
       >
         <button
@@ -181,14 +181,16 @@ const Index = () => {
 
             <button
               onClick={handlePopupClaim}
-              className="w-full hover:opacity-95 text-white font-bold py-4 px-6 rounded-full shadow-lg transition-all duration-200"
-              style={{ background: walmartBlue }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.background = walmartBlueHover)
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.background = walmartBlue)
-              }
+              className="w-full text-white font-bold py-4 px-6 rounded-full shadow-lg transition-all duration-200"
+              style={{
+                backgroundColor: walmartBlue,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = walmartBlueHover;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = walmartBlue;
+              }}
             >
               Claim Now
             </button>
@@ -198,14 +200,18 @@ const Index = () => {
 
       <div
         className="w-full text-white text-center text-sm font-semibold py-2 px-4 fixed top-0 left-0 z-40"
-        style={{ background: walmartBlue }}
+        style={{
+          backgroundColor: walmartBlue,
+        }}
       >
         5,500+ People Already Claimed
       </div>
 
       <div
         className="min-h-screen flex flex-col items-center justify-center px-4 py-4 fade-in-up mt-8"
-        style={{ background: "#ffffff" }}
+        style={{
+          backgroundColor: "#ffffff",
+        }}
       >
         <div className="mb-2">
           <img
@@ -226,7 +232,7 @@ const Index = () => {
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0 step-number"
                   style={{
-                    background: walmartBlue,
+                    backgroundColor: walmartBlue,
                     color: "#ffffff",
                   }}
                 >
@@ -250,17 +256,17 @@ const Index = () => {
 
         <button
           onClick={handleClaimClick}
-          className="w-full max-w-md font-semibold py-5 px-6 rounded-full mb-3 shein-cta-button cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg transition-all duration-200"
+          className="w-full max-w-md font-semibold py-5 px-6 rounded-full mb-3 cta-pump-enhanced flex items-center justify-center gap-3 shadow-lg transition-all duration-200"
           style={{
-            background: walmartBlue,
+            backgroundColor: walmartBlue,
             color: "#ffffff",
           }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.background = walmartBlueHover)
-          }
-          onMouseLeave={(e) =>
-            (e.currentTarget.style.background = walmartBlue)
-          }
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = walmartBlueHover;
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = walmartBlue;
+          }}
         >
           <div className="text-left">
             <div className="font-bold text-base md:text-lg">
