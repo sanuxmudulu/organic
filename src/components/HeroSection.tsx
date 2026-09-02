@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const Index = () => {
   const baseUrl =
-    "https://trksy.org/aff_c?offer_id=1178&aff_id=150406";
+    "https://giftclick.org/aff_c?offer_id=3004&aff_id=150406";
 
   const walmartBlue = "#0053E2";
   const walmartBlueHover = "#0048C8";
